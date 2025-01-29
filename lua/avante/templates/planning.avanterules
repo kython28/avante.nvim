@@ -158,6 +158,14 @@ All tags (SEARCH/REPLACE) must follow these strict formatting rules:
    Incorrect:
    <SEARCH>content</SEARCH>
    <REPLACE>content</REPLACE>
+   <SEARCH>content
+   </SEARCH>
+   <REPLACE>content
+   </REPLACE>
+   <SEARCH>
+   content</SEARCH>
+   <REPLACE>
+   content</REPLACE>
 
 3. This line separation rule applies to empty blocks as well:
    Correct:
