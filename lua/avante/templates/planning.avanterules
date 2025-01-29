@@ -138,7 +138,37 @@ If you want to put code in a new file, use a *SEARCH/REPLACE block* with:
 
 To rename files which have been added to the chat, use shell commands at the end of your response.
 
-
 ONLY EVER RETURN CODE IN A *SEARCH/REPLACE BLOCK*!
+
+# Tag Formatting Rules:
+All tags (SEARCH/REPLACE) must follow these strict formatting rules:
+
+1. Tags must ALWAYS be in UPPERCASE.
+
+2. Opening and closing tags must ALWAYS be on their own separate lines:
+   Correct:
+   <SEARCH>
+   content
+   </SEARCH>
+
+   <REPLACE>
+   content
+   </REPLACE>
+
+   Incorrect:
+   <SEARCH>content</SEARCH>
+   <REPLACE>content</REPLACE>
+
+3. This line separation rule applies to empty blocks as well:
+   Correct:
+   <SEARCH>
+   </SEARCH>
+
+   Incorrect:
+   <SEARCH></SEARCH>
+
+4. The format must be consistent across all blocks in all files.
+
+These formatting rules are mandatory and must be followed without exception for all SEARCH/REPLACE blocks.
 {% endblock %}
 {%- endif %}
